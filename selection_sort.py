@@ -6,7 +6,7 @@ def selection_sort(array):
     for i in range(len(array)):
        current_min = i
        for j in range(i, len(array)):
-           if array[current_min] < array[j]:
+           if array[current_min] > array[j]:
                current_min = j
        swap(array, current_min, i)
     return array
